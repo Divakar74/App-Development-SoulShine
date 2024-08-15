@@ -1,0 +1,81 @@
+.title{
+  margin-top: 5rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.dashboard {
+  display: flex;
+  font-family: Poppins, sans-serif;
+}
+
+.sidebar {
+  width: 300px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar .rounded-container {
+  border-radius: 15px;
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.sidebar p {
+  margin: 5px 0;
+}
+
+.sidebar .btn-save {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+}
+
+.sidebar .btn-save:hover {
+  background-color: #0056b3;
+}
+
+.main-content {
+  margin-left: 320px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.settings-info input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.couple-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.daily-reflection,
+.gratitude-journal,
+.couple-goals,
+.conflict-resolution,
+.progress-tracker,
+.feedback-section {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 90%; /* Increased from 70% to 90% */
+}
+
+.daily-reflection .mood-entry,
+.gratitude-journal .quote-box,
+.couple-goals .goals-options {
+  margin-bottom: 20px;
+}
+
+.mood-icons,
+.goals-options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mood-icons button,
+.goals-options button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.mood-icons button:hover,
+.goals-options button:hover {
+  background: #0056b3;
+}
+
+.journaling textarea,
+.gratitude-journal textarea,
+.conflict-resolution textarea,
+.feedback-section textarea,
+.text-field {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.static-textarea {
+  background-color: #f9f9f9;
+  white-space: pre-wrap;
+  overflow: auto;
+}
+
+.quote-box {
+  background: #e0f7fa;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.report-section {
+  margin-bottom: 20px;
+}
+
+.generated-report {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.user-entries {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.entries-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+.entry-box {
+  margin-bottom: 10px;
+}
+
+.entry-box h4 {
+  margin-bottom: 5px;
+}
+
+.entry-box p {
+  margin: 0;
+}
+
+/* Popup Styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content h3 {
+  margin-top: 0;
+}
+
+.popup-content textarea,
+.popup-content input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.popup-content button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .mood-icons,
+  .goals-options {
+    flex-direction: column;
+  }
+}
