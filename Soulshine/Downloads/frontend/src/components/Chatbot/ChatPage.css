@@ -1,0 +1,54 @@
+/* ChatPage.css */
+.ChatPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .chat-box {
+    flex: 1;
+    padding: 20px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+  }
+  
+  .chat-entry {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 75%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .chat-entry.user {
+    align-self: flex-end;
+    background-color: #d0f5a9;
+  }
+  
+  .chat-entry.bot {
+    align-self: flex-start;
+    background-color: #ffffff;
+  }
+  
+  .input-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input-box input {
+    flex: 1;
+  }
+  
+  .input-box button {
+    background-color: #2d9cdb;
+    color: white;
+  }
+  
